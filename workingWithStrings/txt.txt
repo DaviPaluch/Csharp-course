@@ -1,0 +1,27 @@
+//Working with strings C#
+
+//Exemples of methods and whatever
+
+
+
+
+string phrase = "Phrase very nice";
+
+var a = phrase.Length;
+var b = phrase.ToUpper();
+var c = phrase.ToLower();
+var d = phrase.Contains(phrase);
+var e = phrase[0];
+var f = phrase.IndexOf("very");
+var g = phrase.Substring(7);
+var h = phrase.Substring(phrase.IndexOf("n"));
+
+
+Console.WriteLine(".Length {size of string} >>> " + a);
+Console.WriteLine(".ToUpper() {modify the string to upper case} >>> " + b);
+Console.WriteLine(".ToLower() {modify the strings to lower case} >>> " + c);
+Console.WriteLine(".Contains({string}) {check if exists the parameter inside of string} >>> " + d);
+Console.WriteLine("[] index position of string >>> " + e);
+Console.WriteLine(".IndexOf({string}) {say for me which the index that content my parameter} >>> " + "very: " + f + ", P: " + phrase.IndexOf("Ph"));
+Console.WriteLine(".Substring({int},{int}) is a method that show me a word inside of string until the and or until the parameter that i set >>> " + g + "  or: " + phrase.Substring(7,3));
+Console.WriteLine(".Substring() and .IndexOf() >>>" + h);
